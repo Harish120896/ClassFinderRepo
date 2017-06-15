@@ -19,43 +19,43 @@ classesRouter.get('/music', function(req, res, next) {
 		res.json(classes);
 	});
 });
-classesRouter.get('/dance', function(req, res, next) {
+classesRouter.get('/Dance', function(req, res, next) {
   	Classes.find({classname:"Dance"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/tailoring', function(req, res, next) {
+classesRouter.get('/Tailoring', function(req, res, next) {
   	Classes.find({classname:"Tailoring"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/art',function(req, res, next) {
+classesRouter.get('/ArtClass',function(req, res, next) {
 	Classes.find({classname:"ArtClasses"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/badminton', function(req, res, next) {
+classesRouter.get('/Badminton', function(req, res, next) {
   	Classes.find({classname:"Badminton"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/cricket', function(req, res, next) {
+classesRouter.get('/Cricket', function(req, res, next) {
   	Classes.find({classname:"Cricket"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/chess', function(req, res, next) {
+classesRouter.get('/ChessCoaching', function(req, res, next) {
   	Classes.find({classname:"ChessCoaching"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
 	});
 });
-classesRouter.get('/yoga', function(req, res, next) {
+classesRouter.get('/Yoga', function(req, res, next) {
   	Classes.find({classname:"Yoga"}).exec(function(err, classes){
 		if(err){throw err;}
 		res.json(classes);
